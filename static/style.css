@@ -1,0 +1,69 @@
+body {
+    background-color: #f8f9fc;
+    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.dashboard-header {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.current-month-badge {
+    backdrop-filter: blur(5px);
+}
+
+.card {
+    border-radius: 0.5rem;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+    margin-bottom: 1.5rem;
+}
+
+.stat-card {
+    border-left: 0.25rem solid rgba(255, 255, 255, 0.5) !important;
+}
+
+.stat-card .icon-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.table th {
+    border-top: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    color: #6e707e;
+}
+
+.progress {
+    border-radius: 0.35rem;
+    height: 10px;
+}
+
+.progress-bar {
+    border-radius: 0.35rem;
+}
+
+.chart-container {
+    position: relative;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .stat-card .icon-circle {
+        width: 40px;
+        height: 40px;
+        font-size: 1.25rem;
+    }
+    
+    .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
